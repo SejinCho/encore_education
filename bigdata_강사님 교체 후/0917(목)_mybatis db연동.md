@@ -20,7 +20,7 @@
   - mybatis : 3.2.8 
   - mybatis spring : 1.2.2
 
-![image-20200917092501986](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917092501986.png)
+![image-20200917092501986](image\image-20200917092501986.png)
 
 ```xml
 <!-- mybatis -->
@@ -111,7 +111,7 @@
 
   - return namespace.id
 
-![image-20200917101213993](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917101213993.png)
+![image-20200917101213993](image\image-20200917101213993.png)
 
 ```java
 @Override
@@ -134,7 +134,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
 - (해결) @Qualifier("mybatisemp") 추가 (Repository 에 추가한 이름) : 2개가 있음을 명시
 
-![image-20200917103137402](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917103137402.png)
+![image-20200917103137402](image\image-20200917103137402.png)
 
 
 
@@ -142,14 +142,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
 - 주의
 
-![image-20200917141103522](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917141103522.png)
+![image-20200917141103522](image\image-20200917141103522.png)
 
 
 
 - 데이터 Controller로 넘어오지 않은 문제
   - enctype="multipart/form-data"를 지워야함 : 
 
-![image-20200917141801030](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917141801030.png)
+![image-20200917141801030](image\image-20200917141801030.png)
 
 
 
@@ -159,11 +159,13 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
 - http://oss.opensagres.fr/tern.repository/1.2.0/ - select all
 
-![image-20200917154244399](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917154244399.png)
+![image-20200917154244399](image\image-20200917154244399.png)
+
+
 
 - 프로젝트 오른쪽버튼 -configure-convert to tern
 
-![image-20200917170933788](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200917170933788.png)
+![image-20200917170933788](image\image-20200917170933788.png)
 
 
 

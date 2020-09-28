@@ -61,7 +61,7 @@ public class LogAdvice {
 - get으로 시작되는 메소드가 실행될 때만 로그기록이 남음
 - aopbean.xml
 
-![image-20200922091656849](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922091656849.png)
+![image-20200922091656849](image\image-20200922091656849.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -225,7 +225,7 @@ public class AOPClient {
 }
 ```
 
-![image-20200922111536347](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922111536347.png)
+![image-20200922111536347](image\image-20200922111536347.png)
 
 
 
@@ -316,7 +316,7 @@ public class AOPClient {
 
 - spring-config 의 namespace에 다음 내용 추가
 
-![image-20200922131902100](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922131902100.png)
+![image-20200922131902100](image\image-20200922131902100.png)
 
 - spring-config.xml 에 내용 추가 
 
@@ -435,70 +435,70 @@ public class AOPClient {
 
 - https://www.vmware.com/kr/products/workstation-player/workstation-player-evaluation.html
 
-![image-20200922082218119](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922082218119.png)
+![image-20200922082218119](image\image-20200922082218119.png)
 
 
 
 - https://wiki.centos.org/Download
 - 미러사이트 접속
 
-![image-20200922082459755](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922082459755.png)
+![image-20200922082459755](image\image-20200922082459755.png)
 
 - CentOS 7 다운로드
 
-![image-20200922082553962](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922082553962.png)
+![image-20200922082553962](image\image-20200922082553962.png)
 
 
 
 > wmware 설치
 
-![image-20200922143625512](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922143625512.png)
+![image-20200922143625512](image\image-20200922143625512.png)
 
-![image-20200922143646659](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922143646659.png)
+![image-20200922143646659](image\image-20200922143646659.png)
 
-![image-20200922143713096](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922143713096.png)
+![image-20200922143713096](image\image-20200922143713096.png)
 
-![image-20200922143849146](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922143849146.png)
+![image-20200922143849146](image\image-20200922143849146.png)
 
-![image-20200922144000330](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922144000330.png)
+![image-20200922144000330](image\image-20200922144000330.png)
 
 => install -> finish
 
-![image-20200922144133993](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922144133993.png)
+![image-20200922144133993](image\image-20200922144133993.png)
 
 
 
 - 실행
 
-![image-20200922144808767](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922144808767.png)
+![image-20200922144808767](image\image-20200922144808767.png)
 
-![image-20200922144829035](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922144829035.png)
+![image-20200922144829035](image\image-20200922144829035.png)
 
-![image-20200922144922415](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922144922415.png)
+![image-20200922144922415](image\image-20200922144922415.png)
 
 > 머신 생성하기 
 
 - create a new virtual machine
 
-![image-20200922145010935](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145010935.png)
+![image-20200922145010935](image\image-20200922145010935.png)
 
-![image-20200922145053332](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145053332.png)
+![image-20200922145053332](image\image-20200922145053332.png)
 
-![image-20200922145147990](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145147990.png)
+![image-20200922145147990](image\image-20200922145147990.png)
 
-![image-20200922145400428](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145400428.png)
+![image-20200922145400428](image\image-20200922145400428.png)
 
-![image-20200922145624619](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145624619.png)
+![image-20200922145624619](image\image-20200922145624619.png)
 
-![image-20200922145733180](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145733180.png)
+![image-20200922145733180](image\image-20200922145733180.png)
 
-![image-20200922145756752](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145756752.png)
+![image-20200922145756752](image\image-20200922145756752.png)
 
-![image-20200922145828977](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922145828977.png)
+![image-20200922145828977](image\image-20200922145828977.png)
 
 - C:\Users\whtpw\Documents\Virtual Machines\hadoop01 에 생성
 
-![image-20200922151253988](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922151253988.png)
+![image-20200922151253988](image\image-20200922151253988.png)
 
 
 
@@ -506,29 +506,29 @@ public class AOPClient {
 
 - 전원켜기
 
-![image-20200922151319023](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922151319023.png)
+![image-20200922151319023](image\image-20200922151319023.png)
 
-![image-20200922151338078](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922151338078.png)
+![image-20200922151338078](image\image-20200922151338078.png)
 
 - ctrl + alt : 마우스 제어 
 
-![image-20200922151619739](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922151619739.png)
+![image-20200922151619739](image\image-20200922151619739.png)
 
 - suspend : 현재 작업까지 상태 저장
 - power off : 끄기
 
-![image-20200922152012675](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922152012675.png)
+![image-20200922152012675](image\image-20200922152012675.png)
 
 
 
 - 네트워크를 실행할 수 있는 실행파일 설치
   - C:\Program Files (x86)\VMware\VMware Player 폴더에 파일 넣기
 
-![image-20200922155425281](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922155425281.png)
+![image-20200922155425281](image\image-20200922155425281.png)
 
 - 실행 
 
-![image-20200922155503508](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922155503508.png)
+![image-20200922155503508](image\image-20200922155503508.png)
 
 
 
@@ -536,27 +536,27 @@ public class AOPClient {
 
 - change settings
 
-![image-20200922162234193](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162234193.png)
+![image-20200922162234193](image\image-20200922162234193.png)
 
 - ip 변경 가능
 
-![image-20200922162347983](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162347983.png)
+![image-20200922162347983](image\image-20200922162347983.png)
 
-![image-20200922162754969](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162754969.png)
+![image-20200922162754969](image\image-20200922162754969.png)
 
-![image-20200922162617361](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162617361.png)
+![image-20200922162617361](image\image-20200922162617361.png)
 
 
 
 - power off 후 settings
 
-![image-20200922162721967](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162721967.png)
+![image-20200922162721967](image\image-20200922162721967.png)
 
-![image-20200922163000078](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922163000078.png)
+![image-20200922163000078](image\image-20200922163000078.png)
 
 - 파일 선택 후 ok 버튼
 
-![image-20200922162945214](C:\Users\whtpw\AppData\Roaming\Typora\typora-user-images\image-20200922162945214.png)
+![image-20200922162945214](image\image-20200922162945214.png)
 
 
 
