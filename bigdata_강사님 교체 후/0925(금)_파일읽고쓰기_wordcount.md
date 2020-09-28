@@ -1,8 +1,4 @@
----
-typora-root-url: image
----
-
-## 9/24(금)
+## 9/25(금)
 
 #### 파일 읽고 쓰기
 
@@ -13,7 +9,7 @@ typora-root-url: image
 - 자바 프로젝트 생성 
   - 이클립스에서 맵리듀스를 작성할 프로젝트를 생성
 
-![image-20200925083859369](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925083859369.png)
+![image-20200925083859369](image/image-20200925083859369.png)
 
 
 
@@ -21,13 +17,13 @@ typora-root-url: image
   - clean-lib / clean-src: 파일을 지우는 작업 수행
   - build-lib : jar파일 생성 (basedir에 있는 파일을 묶어서 jar로 만들어 build)
 
-![image-20200925084825187](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925084825187.png)
+![image-20200925084825187](image/image-20200925084825187.png)
 
 
 
 - hdfs.exam 패키지 생성 후 HDFSTest01.java 클래스 생성
 
-![image-20200925092508843](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925092508843.png)
+![image-20200925092508843](image/image-20200925092508843.png)
 
 
 
@@ -35,35 +31,35 @@ typora-root-url: image
 
 - remote system explore Hadoop 계정으로 로그인
 
-![image-20200925091421100](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925091421100.png)
+![image-20200925091421100](image/image-20200925091421100.png)
 
 - hadoop-core-1.2.1.jar 파일 복사 
 
-![image-20200925091913353](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925091913353.png)
+![image-20200925091913353](image/image-20200925091913353.png)
 
 
 
 - Local 아무 폴더에 붙여넣기
 
-![image-20200925092002757](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925092002757.png)
+![image-20200925092002757](image/image-20200925092002757.png)
 
 
 
 - spring으로 이동하여 Build Path
 
-![image-20200925092228017](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925092228017.png)
+![image-20200925092228017](image/image-20200925092228017.png)
 
 
 
 - add External JARs... (hadoop-core-1.2.1.jar 추가)
 
-![image-20200925092129275](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925092129275.png)
+![image-20200925092129275](image/image-20200925092129275.png)
 
 
 
 - conf 패키지에 있는 파일들이 설정정보에 대한 작업을 할 수 있도록 도와주는 역할을 한다.
 
-![image-20200925092426791](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925092426791.png)
+![image-20200925092426791](image/image-20200925092426791.png)
 
 
 
@@ -125,31 +121,31 @@ public class HDFSTest01 {
 
 - xml파일 실행 - ant 실행
 
-![image-20200925095649094](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925095649094.png)
+![image-20200925095649094](image/image-20200925095649094.png)
 
 
 
 - 실행하면 빌드 폴더 생성
 
-![image-20200925095724264](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925095724264.png)
+![image-20200925095724264](image/image-20200925095724264.png)
 
 
 
 - remote system - jar copy
 
-![image-20200925095937548](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925095937548.png)
+![image-20200925095937548](image/image-20200925095937548.png)
 
 
 
 - 붙여넣기
 
-![image-20200925100025440](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925100025440.png)
+![image-20200925100025440](image/image-20200925100025440.png)
 
 
 
 - copy 확인
 
-![image-20200925100144953](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925100144953.png)
+![image-20200925100144953](image/image-20200925100144953.png)
 
 
 
@@ -157,30 +153,30 @@ public class HDFSTest01 {
   - jar : 파일을 실행하는 명령어
   - 메인매소드를 가지고 있는 어플리케이션 명 추가
 
-![image-20200925101833829](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925101833829.png)
+![image-20200925101833829](image/image-20200925101833829.png)
 
 
 
 - 에러 input 폴더가 이미 있어서 발생
 
-![image-20200925102012565](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925102012565.png)
+![image-20200925102012565](image/image-20200925102012565.png)
 
 
 
 - 파일명 수정
 
-![image-20200925102044932](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925102044932.png)
+![image-20200925102044932](image/image-20200925102044932.png)
 
 
 
 - 확인 - hadoop01:50070
   - output이 실행됨
 
-![image-20200925102150493](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925102150493.png)
+![image-20200925102150493](image/image-20200925102150493.png)
 
-![image-20200925102208220](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925102208220.png)
+![image-20200925102208220](image/image-20200925102208220.png)
 
-![image-20200925102219347](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925102219347.png)
+![image-20200925102219347](image/image-20200925102219347.png)
 
 
 
@@ -239,7 +235,7 @@ public class HDFSTest02 {
 }
 ```
 
-![image-20200925103757915](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925103757915.png)
+![image-20200925103757915](image/image-20200925103757915.png)
 
 
 
@@ -297,13 +293,13 @@ public class HDFSFileCopy {
 
 - input_test의 있는 내용을 복사하여 copy_test 텍스트 파일을 생성하여 내용 복사
 
-![image-20200925110407105](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925110407105.png)
+![image-20200925110407105](image/image-20200925110407105.png)
 
 
 
 - 결과 확인
 
-![image-20200925110506302](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925110506302.png)
+![image-20200925110506302](image/image-20200925110506302.png)
 
 
 
@@ -369,13 +365,13 @@ public class HDFSFileCopy02 {
 
 - copy
 
-![image-20200925113921766](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925113921766.png)
+![image-20200925113921766](image/image-20200925113921766.png)
 
 
 
 - 확인
 
-![image-20200925113938566](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925113938566.png)
+![image-20200925113938566](image/image-20200925113938566.png)
 
 
 
@@ -481,33 +477,33 @@ public class HDFSFileCopy02 {
 
 - 프로젝트 생성(java project)
 
-![image-20200925141225043](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141225043.png)
+![image-20200925141225043](image/image-20200925141225043.png)
 
 
 
-![image-20200925141249650](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141249650.png)
+![image-20200925141249650](image/image-20200925141249650.png)
 
 - Bulid Path 
 
-![image-20200925141437286](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141437286.png)
+![image-20200925141437286](image/image-20200925141437286.png)
 
 
 
 - ladd external jars...
 
-![image-20200925141334807](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141334807.png)
+![image-20200925141334807](image/image-20200925141334807.png)
 
 
 
 - hadoop-core-1.2.1-jar파일 추가
 
-![image-20200925141350399](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141350399.png)
+![image-20200925141350399](image/image-20200925141350399.png)
 
 
 
 - apply
 
-![image-20200925141405939](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925141405939.png)
+![image-20200925141405939](image/image-20200925141405939.png)
 
 
 
@@ -634,7 +630,7 @@ public class WordCountDriver {
 - build.xml 실행 - build system explore - 하둡에 jar파일 넣기
 - 실행
 
-![image-20200925154811698](/../../../../AppData/Roaming/Typora/typora-user-images/image-20200925154811698.png)
+![image-20200925154811698](image/image-20200925154811698.png)
 
 
 
