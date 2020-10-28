@@ -385,92 +385,109 @@ public class HDFSFileCopy02 {
 
 - mapreduce
 
-  1. MapReduce프레임워크 내부에서 사용되는 데이터 타입
+  0. mapreduce의 사용
 
-     분산환경에서 처리되므로 데이터 타입이 일반 자바에서 사용하는 기본 데이터 타입이 아니라 하둡 내부에서 작성된 인터페이스(Writable)를 상속하는 특별한 클래스타입이어야 한다.
+     1) 활용도가 높은 분야
 
-     		- int : IntWritable
+     - 병령도가 높은 단순작업
+     - 대량의 이미지 포멧을 다른 포멧으로 변환하는 작업
+     - 대량의 텍스트 파일에서 특정 단어가 나타난 파일만 찾는 작업
+   - 로그분서
+     - 머신러닝을 위한 데이터 생성 및 학습
+
+     2) mapreduce의 사용 부적합 분야
+
+     - real time의 데이터 처리
+   - 반복실행이 필요한 작업 : shuffle단계에서 오버헤드가 크다.
+  
+
+  
+1. MapReduce프레임워크 내부에서 사용되는 데이터 타입
+  
+   분산환경에서 처리되므로 데이터 타입이 일반 자바에서 사용하는 기본 데이터 타입이 아니라 하둡 내부에서 작성된 인터페이스(Writable)를 상속하는 특별한 클래스타입이어야 한다.
+  
+   		- int : IntWritable
      		- long : LongWritable
-     		- String : Text
-
-     
-
-  2. 기본 작업
-
-     1) Mapper
-
-      - Mapper를 상속하여 작성
-
-        : Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>
-
-           	* KEYIN : mapper에 input되는 데이터의 key타입(byte offset이나 라인넘버로 생각)
-
-        ​			 => 라인넘버가 long타입
-
-        ​	   * VALUEIN : mapper에 input되는 데이터의 value타입
-
-        ​	   * KEYOUT : mapper에 output되는 데이터의 key타입
-
-        ​	   * VALUEOUT : mapper에 output되는 데이터의 value타입 (매퍼거치고 나면 무조건 1이므로 상수로 정의하는 작업을 실행해야함 - int)
-
-     	- map 메소드 오버라이딩
-
-     ​			protected void map(key, value, context 객체){
-
-     ​			// key: 입력키
-
-     ​			// value: 입력 데이터
-
-     ​			// context 객체 : hadoop MapReduce 프레임워크 내부에서 통신을 담당하는 객체
-
-  ​									맵리듀스가 통신하면서 맵의 출력 데이터를 기록하고 맵의 출력데이터를       									Shuffle하기 위해서 내보내는 작업을 수행.
-
-  ​									메시지 갱신, 처리, 프레임워크 내부에서 통신할 때 필요한 여러가지 기본작업을 									처리하는 객체
-
-  ​				}
-
-  - 2) reducer
-
-    - 집계작업
-
-       - reducer를 상속 
-
-       - 리듀서에 전달된 입력값과 value를 활용해서 집계할 수 있도록 코드를 작성
-
-       - reduce 메소드를 오버라이딩
-
-       - protected void reduce(key, value, context 객체){
-
-         ​	//reduce메소드에 전달되는 key의 타입, value 타입
-
-         ​	//book, [1,1,1,1,1,1..]
-
-         ​	key : Text
-
-         ​	value : Iterable 타입
-
-    ​	
-
-    }
-
-  - 3) Driver
-
+   		- String : Text
+  
+   
+  
+2. 기본 작업
+  
+   1) Mapper
+  
+    - Mapper를 상속하여 작성
+  
+      : Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>
+  
+         	* KEYIN : mapper에 input되는 데이터의 key타입(byte offset이나 라인넘버로 생각)
+  
+      ​			 => 라인넘버가 long타입
+  
+      ​	   * VALUEIN : mapper에 input되는 데이터의 value타입
+  
+      ​	   * KEYOUT : mapper에 output되는 데이터의 key타입
+  
+      ​	   * VALUEOUT : mapper에 output되는 데이터의 value타입 (매퍼거치고 나면 무조건 1이므로 상수로 정의하는 작업을 실행해야함 - int)
+  
+   	- map 메소드 오버라이딩
+  
+   ​			protected void map(key, value, context 객체){
+  
+   ​			// key: 입력키
+  
+   ​			// value: 입력 데이터
+  
+   ​			// context 객체 : hadoop MapReduce 프레임워크 내부에서 통신을 담당하는 객체
+  
+​									맵리듀스가 통신하면서 맵의 출력 데이터를 기록하고 맵의 출력데이터를       									Shuffle하기 위해서 내보내는 작업을 수행.
+  
+​									메시지 갱신, 처리, 프레임워크 내부에서 통신할 때 필요한 여러가지 기본작업을 									처리하는 객체
+  
+​				}
+  
+- 2) reducer
+  
+  - 집계작업
+  
+     - reducer를 상속 
+  
+     - 리듀서에 전달된 입력값과 value를 활용해서 집계할 수 있도록 코드를 작성
+  
+     - reduce 메소드를 오버라이딩
+  
+     - protected void reduce(key, value, context 객체){
+  
+       ​	//reduce메소드에 전달되는 key의 타입, value 타입
+  
+       ​	//book, [1,1,1,1,1,1..]
+  
+       ​	key : Text
+  
+       ​	value : Iterable 타입
+  
+  ​	
+  
+  }
+  
+- 3) Driver
+  
     - 맵리듀스를 실행하기 위한 처리를 정의하는 클래스
-
+  
       1) 맵리듀스를 실행하기 위한 job을 생성 
-
+  
       2) job을 처리할 실제 클래스에 대한 정보를 정의(Mapper, Reducer, Driver)
-
+  
       3) input 데이터와 output데이터의 포멧을 정의(hdfs에 텍스트 파일의 형태로 input/output이 들어감)
-
+  
       4) 리듀서의 출력데이터에 대한 key와 value의 타입을 명시
-
+  
       5) hdfs에 저장된 파일을 읽어오고 처리결과를 저장할 수 있도록 path정보를 설정
-
+  
       6) 1번부터 5번까지의 설정한 내용을 기반으로 실제 job이 실행될 수 있도록 명령
-
+  
     - 
-
+  
   
 
 
